@@ -1,0 +1,10 @@
+
+<h3>You have {{messages.length}} messages</h3>
+
+<div *ngFor="let message of messages; let i = index">
+  <md-card style="margin:8px"> 
+      <md-card-title>{{message.owner}}</md-card-title>
+      <md-card-content>{{message.text}}</md-card-content>
+  </md-card>
+</div>
+
